@@ -13,7 +13,7 @@ X = filtered_data['время'].values.reshape(-1, 1)
 y = filtered_data['количество_сообщений'].values
 
 # Полиномиальная регрессия
-degree = 6  # Выберите желаемую степень полинома
+degree = 16  # Выберите желаемую степень полинома
 y_pred, mse, r2 = perform_polynomial_regression(X, y, degree)
 
 # Отрисовка результатов
